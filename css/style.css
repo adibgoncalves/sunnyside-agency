@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+  padding: 30px 30px;
+  background-image: url("../img/desktop/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header .container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container-nav .menu-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header .container-nav .menu-nav li {
+  margin-right: 30px;
+}
+
+header .container-nav .menu-nav li:last-child {
+  margin-right: 0;
+}
+
+header .container-nav .menu-nav li a.menu-item-nav {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header .container-nav .menu-nav li a.menu-item-nav.contact {
+  color: #000;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+
+  transition: 0.3s;
+}
+
+header .container-nav .menu-nav li a.menu-item-nav.contact:hover {
+  background-color: #6dceff;
+  color: #fff;
+}
+
+header .container-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+header .container-title h1 {
+  color: #fff;
+  font-size: 80px;
+}
+
+header .container-arrow {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Main */
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
+.main-content .content .content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+
+  width: 50%;
+  padding: 80px;
+}
+
+.main-content .content .content-text h2 {
+  font-size: 45px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.main-content .content .content-text p {
+  margin-bottom: 20px;
+}
+
+.main-content .content .content-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100%;
+  width: 50%;
+}
+
+.main-content .content .content-image.one {
+  background-image: url("../img/desktop/image-transform.jpg");
+}
+
+.main-content .content .content-image.two {
+  background-image: url("../img/desktop/image-stand-out.jpg");
+}
+
+.main-content .content .content-image.three {
+  background-image: url("../img/desktop/image-transform.jpg");
+}
