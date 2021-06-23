@@ -84,7 +84,7 @@ header .container-arrow {
   align-items: center;
   justify-content: space-between;
 
-  height: 100vh;
+  height: 80vh;
 }
 
 .main-content .content .content-text {
@@ -108,11 +108,54 @@ header .container-arrow {
   margin-bottom: 20px;
 }
 
+.main-content .content .content-text .link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .content .content-text .link a {
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 2;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main-content .content .content-text .link hr {
+  height: 8px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 14px;
+  width: 115px;
+  right: -8px;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.main-content .content .content-text .link hr.yellow {
+  background-color: #fff5bc;
+}
+
+.main-content .content .content-text .link:hover hr.yellow {
+  background-color: #f5cf00;
+}
+
+.main-content .content .content-text .link hr.red {
+  background-color: #fdd8d0;
+}
+
+.main-content .content .content-text .link:hover hr.red {
+  background-color: #f97560;
+}
+
 .main-content .content .content-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  position: relative;
   height: 100%;
   width: 50%;
 }
@@ -126,5 +169,73 @@ header .container-arrow {
 }
 
 .main-content .content .content-image.three {
-  background-image: url("../img/desktop/image-transform.jpg");
+  background-image: url("../img/desktop/image-graphic-design.jpg");
+}
+
+.main-content .content .content-image.four {
+  background-image: url("../img/desktop/image-photography.jpg");
+}
+
+.main-content .content .content-image .text-call {
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  padding: 0px 250px;
+}
+
+.main-content .content .content-image .text-call h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.main-content .content .content-image .text-call p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main-content .content .content-image.three .text-call h3,
+.main-content .content .content-image.three .text-call p {
+  color: #20544a;
+}
+
+.main-content .content .content-image.four .text-call h3,
+.main-content .content .content-image.four .text-call p {
+  color: #1a5370;
+}
+
+.clients {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients .title {
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-bottom: 70px;
+}
+
+.clients .client-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1;
+  padding: 0px 200px;
+}
+
+.clients .client-container .client-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients .client-container .client-item img {
+  border-radius: 50%;
+  height: 80px;
+  margin-bottom: 80px;
+}
+
+.clients .client-container .client-item p {
+  font-weight: 400;
 }
